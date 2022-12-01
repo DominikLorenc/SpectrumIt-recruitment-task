@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.Wrapper {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+
+  color: $black;
+}

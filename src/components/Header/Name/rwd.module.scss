@@ -1,0 +1,11 @@
+@use 'sass:map';
+@import '../../../styles/variables';
+@import './styles.module.scss';
+
+
+@media only screen and (min-width: map.get($breakpoints, 'tablet')) {
+    .Wrapper {
+      font-size: 30px;
+    }
+  }
+  

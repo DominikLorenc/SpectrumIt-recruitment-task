@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+
+
+  background: $darkGreen;
+
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+
+  &Link {
+    display: flex;
+    flex-direction: column;
+    
+    width:100%;
+    padding: 10px 16px;
+
+    text-decoration: none;
+  }
+  span {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+    color: #ffffff;
+    -webkit-text-stroke: 1px #d9d9d9;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
