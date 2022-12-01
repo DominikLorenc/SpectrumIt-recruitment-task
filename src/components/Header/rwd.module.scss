@@ -1,0 +1,11 @@
+@use 'sass:map';
+@import '../../styles/variables';
+@import './styles.module.scss';
+
+.Wrapper {
+
+
+  @media screen and (min-width: map.get($breakpoints, 'largeDesktop')) {
+    margin: 11px auto;
+  }
+}
