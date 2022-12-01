@@ -1,10 +1,16 @@
-import styles from './styles.module.scss';
+import { UserProvider } from "../../context/Provider";
+
+import { User } from "../../components/User";
+
+import styles from "./styles.module.scss";
 const { Wrapper } = styles;
 
 export const Layout = () => {
   return (
     <div className={Wrapper}>
-      <h1>test </h1>
+      <UserProvider>
+        <User />
+      </UserProvider>
     </div>
   );
 };

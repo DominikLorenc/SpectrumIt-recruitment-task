@@ -1,6 +1,9 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .Wrapper {
   height: 100vh;
-  background-color:$white;
+
+  background-color: $developmentColor;
+
+  overflow: auto;
 }
