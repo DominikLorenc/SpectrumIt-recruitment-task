@@ -15,4 +15,5 @@ export interface IUser {
   created: string;
   edited: string;
   url: string;
+  src?: string; 
 }

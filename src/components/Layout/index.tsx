@@ -8,11 +8,13 @@ const { Wrapper } = styles;
 
 export const Layout = () => {
   return (
-    <div className={Wrapper}>
+    <>
       <UserProvider>
         <Header />
-        {/* <User /> */}
+        <main className={Wrapper}>
+          <User />
+        </main>
       </UserProvider>
-    </div>
+    </>
   );
 };

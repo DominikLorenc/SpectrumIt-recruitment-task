@@ -1,1 +1,1 @@
-export const url = "https://swapi.dev/api/people/";
+export const url = "https://swapi.py4e.com/api/people/";
