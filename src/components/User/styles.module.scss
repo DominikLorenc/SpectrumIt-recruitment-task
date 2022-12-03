@@ -1,0 +1,118 @@
+.Wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 800px;
+
+  &Content {
+    position: relative;
+    width: 338px;
+    height: 325px;
+    background: #362c2c63;
+    border-radius: 500px 60px 300px 100px;
+    box-shadow: 12px 4px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  &Button {
+    margin: 30px 0 0;
+    padding: 10px 31px;
+
+    background: #35660e;
+    box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    span {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      /* or 30px */
+
+      color: #ffffff;
+      -webkit-text-stroke: 1px #d9d9d9;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &UserName {
+    p {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 61px;
+      text-align: center;
+
+      color: #000000;
+    }
+  }
+
+  &ErrorMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &Loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

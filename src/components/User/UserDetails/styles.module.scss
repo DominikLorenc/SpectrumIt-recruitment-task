@@ -1,0 +1,36 @@
+.Wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 20px;
+  left: 50px;
+
+  &Name {
+    display: flex;
+    align-items: center;
+
+    p {
+   
+      font-weight: 800;
+      font-size: 16px;
+
+      text-align: center;
+
+      color: #000000;
+    }
+
+    svg {
+      transform: scale(0.5);
+    }
+  }
+
+  &Details {
+    p {
+
+      font-style: italic;
+      font-weight: 100;
+      font-size: 16px;
+      line-height: 14px;
+    }
+  }
+}

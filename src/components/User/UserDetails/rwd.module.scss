@@ -1,0 +1,36 @@
+@use 'sass:map';
+@import './styles.module.scss';
+@import '../../../styles/variables';
+
+@media only screen and (min-width: map.get($breakpoints, 'tablet')) {
+  .Wrapper {
+    width: 100%;
+    left: 17%;
+    top: 72%;
+
+    &Name {
+      p {
+        font-size: 50px;
+        line-height: 61px;
+      }
+
+      svg {
+        transform: scale(1);
+        
+        &:nth-child(2){
+            margin: 0 14px;
+        }
+      }
+
+    
+    }
+
+    &Details {
+      p {
+        font-weight: 100;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}

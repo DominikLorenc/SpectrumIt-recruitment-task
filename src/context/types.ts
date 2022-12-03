@@ -1,7 +1,7 @@
 import { IUser } from "../types/types";
 
 export interface IUserContext {
-  userData: IUser[];
+  userData: IUser;
   handleNextUser: () => void;
   isLoading: boolean;
   errorMessage: string;
