@@ -5,6 +5,7 @@ export interface IUserContext {
   handleNextUser: () => void;
   isLoading: boolean;
   errorMessage: string;
+  getDataForForm: () => void
 }
 
 export interface ProviderProps {

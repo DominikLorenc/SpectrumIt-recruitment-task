@@ -7,6 +7,7 @@ const initState = {
   handleNextUser: () => {},
   isLoading: false,
   errorMessage: "",
+  getDataForForm: () => {}
 };
 
 export const UserContext = createContext<IUserContext>(initState);

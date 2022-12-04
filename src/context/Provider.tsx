@@ -18,7 +18,19 @@ export const UserProvider = ({ children }: ProviderProps) => {
 
   const handleNextUser = () => setStartFetchFromUser((prev) => prev + 1);
 
-  console.log(userData, startFetchFromUser);
+  const getDataForForm = () => {
+    const star_wars_data = [
+      {
+        name: userData.name,
+        created: userData.created,
+        vehicles: userData.vehicles,
+      },
+    ];
+
+    const convertedArrayToJson = JSON.stringify(star_wars_data);
+
+    return convertedArrayToJson;
+  };
 
   useEffect(() => {
     setIsLoading(true);
@@ -30,12 +42,12 @@ export const UserProvider = ({ children }: ProviderProps) => {
           setErrorMessage('');
         }
 
-          const data =  response.data;
-          const src = `https://picsum.photos/534/383?random=${startFetchFromUser}`;
+        const data = response.data;
+        const src = `https://picsum.photos/534/383?random=${startFetchFromUser}`;
 
-          setUser({ ...data, src });
+        setUser({ ...data, src });
 
-          setIsLoading(false);
+        setIsLoading(false);
       })
       .catch((e) => {
         setErrorMessage(e.response.data.detail);
@@ -45,7 +57,7 @@ export const UserProvider = ({ children }: ProviderProps) => {
 
   return (
     <UserContext.Provider
-      value={{ userData, handleNextUser, isLoading, errorMessage }}>
+      value={{ userData, handleNextUser, isLoading, errorMessage, getDataForForm }}>
       {children}
     </UserContext.Provider>
   );

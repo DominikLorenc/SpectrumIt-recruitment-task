@@ -1,0 +1,42 @@
+@use 'sass:map';
+@import '../../../styles/variables';
+@import './styles.module.scss';
+
+@media only screen and (min-width: map.get($breakpoints, 'tablet')) {
+  .Wrapper {
+    &Label,
+    &ErrorMessage {
+      font-size: 20px;
+      line-height: 165%;
+    }
+
+    &CheckboxInput[type='checkbox'] {
+      & + ::before {
+        width: 30px;
+        height: 30px;
+        border: 5px solid $black;
+      }
+    }
+
+    &Checkbox{
+        margin: 20px 0 0 0;
+        flex-direction: row;
+    }
+
+    &CheckboxLabel {
+        font-size: 20px;
+        line-height: 165%;
+    
+        span {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &CheckboxInputError[type='checkbox'] {
+        + ::before {
+          border-color: red;
+        }
+      }
+  }
+}
