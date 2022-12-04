@@ -28,7 +28,7 @@ If you have any issues, please let me know in the issues section or directly dom
 ## Installation 💾
 
 ```bash
-git clone https://github.com/DominikLorenc/websiteTechue.git
+git clone https://github.com/DominikLorenc/SpectrumIt-recruitment-task.git
 npm install
 npm start
 ```
