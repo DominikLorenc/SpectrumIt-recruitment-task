@@ -10,7 +10,6 @@ const { Wrapper, WrapperContent, WrapperButton, WrapperErrorMessage } = styles;
 export const User = () => {
   const { handleNextUser, errorMessage } = useContext(UserContext);
 
-
   return (
     <>
       <div className={Wrapper}>
@@ -19,9 +18,9 @@ export const User = () => {
             <p className={WrapperErrorMessage}>{errorMessage}</p>
           ) : (
             <>
-            <UserImage />
-            <UserDetails />
-          </>
+              <UserImage />
+              <UserDetails />
+            </>
           )}
         </div>
       </div>

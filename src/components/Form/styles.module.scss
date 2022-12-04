@@ -1,0 +1,13 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 752px;
+
+  margin: 100px 24px;
+
+  &Form {
+    margin: 55px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

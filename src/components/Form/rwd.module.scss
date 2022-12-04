@@ -3,7 +3,7 @@
 @import './styles.module.scss';
 
 .Wrapper {
-  @media screen and (min-width: map.get($breakpoints, 'largeDesktop')) {
-    margin: 11px auto;
+  @media screen and (min-width: map.get($breakpoints, 'tablet')) {
+    margin: 100px auto;
   }
 }
