@@ -12,8 +12,6 @@ const { Wrapper, WrapperContent, WrapperButton } = styles;
 export const User = () => {
   const { handleNextUser, errorMessage, isLoading } = useContext(UserContext);
 
-  console.log(isLoading )
-
   return (
     <>
       <div className={Wrapper}>
