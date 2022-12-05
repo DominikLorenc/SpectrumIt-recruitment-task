@@ -75,8 +75,7 @@ export const useForm = () => {
           setFormState((prev) => ({ ...prev, ...initFormState }));
         })
         .catch((e) => {
-          setFormState((prev) => ({ ...prev, ...initFormState }));
-          //this reset form is only for test
+  
           console.log(e);
         });
     }
