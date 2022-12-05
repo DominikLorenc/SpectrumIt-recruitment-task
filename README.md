@@ -14,12 +14,14 @@ Recruitment Task
 
 ## Screenshots 📺
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/47724664/205508905-6f10b442-1954-4505-85cb-2c84e5cee06c.png">
-</p>
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47724664/205508935-6cd6f1c1-ebc5-4afa-ad59-8352889699ee.png">
 </p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47724664/205508905-6f10b442-1954-4505-85cb-2c84e5cee06c.png">
+</p>
+
 
 ## Code Example/Issues 🔍
 

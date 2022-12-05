@@ -4,18 +4,24 @@ import { useContext } from 'react';
 import styles from './rwd.module.scss';
 import { UserImage } from './UserImage';
 import { UserDetails } from './UserDetails';
+import { ErrorMessage } from './ErrorMessage';
+import { Loading } from './Loading';
 
-const { Wrapper, WrapperContent, WrapperButton, WrapperErrorMessage } = styles;
+const { Wrapper, WrapperContent, WrapperButton } = styles;
 
 export const User = () => {
-  const { handleNextUser, errorMessage } = useContext(UserContext);
+  const { handleNextUser, errorMessage, isLoading } = useContext(UserContext);
+
+  console.log(isLoading )
 
   return (
     <>
       <div className={Wrapper}>
         <div className={WrapperContent}>
           {errorMessage.length ? (
-            <p className={WrapperErrorMessage}>{errorMessage}</p>
+            <ErrorMessage />
+          ) : isLoading ? (
+            <Loading />
           ) : (
             <>
               <UserImage />

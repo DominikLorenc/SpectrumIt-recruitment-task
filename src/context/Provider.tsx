@@ -55,6 +55,10 @@ export const UserProvider = ({ children }: ProviderProps) => {
       });
   }, [startFetchFromUser]);
 
+  
+
+
+
   return (
     <UserContext.Provider
       value={{ userData, handleNextUser, isLoading, errorMessage, getDataForForm }}>

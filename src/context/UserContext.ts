@@ -1,13 +1,7 @@
 import { createContext } from "react";
-import { IUser } from "../types/types";
 import { IUserContext } from "./types";
+import { initState } from "./utils";
 
-const initState = {
-  userData: {} as IUser,
-  handleNextUser: () => {},
-  isLoading: false,
-  errorMessage: "",
-  getDataForForm: () => {}
-};
+
 
 export const UserContext = createContext<IUserContext>(initState);

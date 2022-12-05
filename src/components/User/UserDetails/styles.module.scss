@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .Wrapper {
   position: absolute;
   display: flex;
@@ -16,7 +18,7 @@
 
       text-align: center;
 
-      color: #000000;
+      color: $black;
     }
 
     svg {
