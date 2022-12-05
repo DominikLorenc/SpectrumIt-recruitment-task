@@ -18,25 +18,25 @@
       }
     }
 
-    &Checkbox{
-        margin: 20px 0 0 0;
-        flex-direction: row;
+    &Checkbox {
+      margin: 20px 0 0 0;
+      flex-direction: row;
     }
 
     &CheckboxLabel {
-        font-size: 20px;
-        line-height: 165%;
-    
-        span {
-          display: flex;
-          align-items: center;
-        }
-      }
+      font-size: 20px;
+      line-height: 165%;
 
-      &CheckboxInputError[type='checkbox'] {
-        + ::before {
-          border-color: red;
-        }
+      span {
+        display: flex;
+        align-items: center;
       }
+    }
+
+    &CheckboxInputError[type='checkbox'] {
+      + ::before {
+        border-color: $red;
+      }
+    }
   }
 }

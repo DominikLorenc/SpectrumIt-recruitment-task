@@ -59,7 +59,7 @@
   &CheckboxInputError[type='checkbox'] {
     @extend .WrapperCheckboxInput;
     + ::before {
-      border-color: red;
+      border-color: $red;
     }
   }
 

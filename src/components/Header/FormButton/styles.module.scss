@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
 
-
   background: $darkGreen;
 
   box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.75);
@@ -13,14 +12,14 @@
   &Link {
     display: flex;
     flex-direction: column;
-    
-    width:100%;
+
+    width: 100%;
     padding: 10px 16px;
 
     text-decoration: none;
   }
   span {
-    font-family: 'Lato';
+    font-family: $secondaryFont;
     font-style: italic;
     font-weight: 400;
     font-size: 18px;
